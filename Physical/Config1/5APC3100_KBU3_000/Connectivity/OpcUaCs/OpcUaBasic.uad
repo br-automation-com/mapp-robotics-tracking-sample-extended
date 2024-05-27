@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="6.0"?>
+<OpcUaSource FileVersion="10" ArVersion="D4.92">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Administrators" Access="0x10E5" />
+        <ACE RoleName="Everyone" Access="0x10A5" />
+      </ACL>
+      <ACL Id="3">
+        <ACE RoleName="Administrators" Access="0x10E5" />
+        <ACE RoleName="Everyone" Access="0x10A5" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases>
+      <EURanges Id="2" AclInherit="0" />
+      <EURanges Id="5" AclInherit="0" />
+    </EURangesAliases>
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="0" AclInherit="0" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <Module Name="&lt;Default&gt;">
+    <GlobalVariables Name="Global Variables">
+      <Variable Name="ControlPanel" RecursiveEnable="2" />
+    </GlobalVariables>
+    <Task Name="APP_Robot1">
+      <Variable Name="IPMonitor">
+        <Variable Name="NcblockL2" />
+        <Variable Name="NcblockL1" />
+        <Variable Name="Ncblock" />
+        <Variable Name="NcblockN1" />
+        <Variable Name="NcblockN2" />
+      </Variable>
+      <Variable Name="Grab1Closed" />
+      <Variable Name="Grab2Closed" />
+    </Task>
+    <Task Name="APP_ConIn">
+      <Variable Name="ConvSettings" RecursiveEnable="2" />
+      <Variable Name="ProductsPosition" RecursiveEnable="2" />
+    </Task>
+    <Task Name="APP_ConOut">
+      <Variable Name="ConvSettings" RecursiveEnable="2" />
+      <Variable Name="ProductsPosition" RecursiveEnable="2" />
+    </Task>
+  </Module>
+</OpcUaSource>

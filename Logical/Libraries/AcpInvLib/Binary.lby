@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Library Version="3.00.4" SubType="Binary" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">AcpInvLib.typ</File>
+    <File Description="Exported constants">AcpInvLib.var</File>
+    <File Description="Exported functions and function blocks">AcpInvLib.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="AsIOAcc" />
+    <Dependency ObjectName="AsEPL" />
+    <Dependency ObjectName="AsBrStr" />
+    <Dependency ObjectName="runtime" FromVersion="0.00.0" />
+    <Dependency ObjectName="FileIO" FromVersion="0.00.0" />
+    <Dependency ObjectName="standard" FromVersion="0.00.0" />
+    <Dependency ObjectName="FileIO" FromVersion="0.00.0" />
+  </Dependencies>
+</Library>

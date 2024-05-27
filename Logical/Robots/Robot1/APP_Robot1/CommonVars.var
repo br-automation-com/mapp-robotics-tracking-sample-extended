@@ -1,0 +1,80 @@
+(*
+Link handling*)
+VAR
+	AxQ1 : UDINT; (*Memory to Q1*)
+	AxQ2 : UDINT; (*Memory to Q2*)
+	AxQ3 : UDINT; (*Memory to Q4*)
+	AxQ4 : UDINT; (*Memory to Q4*)
+	AxQ5 : UDINT; (*Memory to Q4*)
+	TrackLinkConveyorOut : UDINT; (*Link to conveyor tracking path*)
+	TrackLinkConveyorIn : UDINT; (*Link to conveyor tracking path*)
+	MpDeltaName : STRING[250]; (*Name of axGroup to find position in object hierachy*)
+	MpLinkDelta : UDINT; (*Link to delta*)
+	ProgramLink : REFERENCE TO STRING[32]; (*Program name as string executed by the interpreter*)
+END_VAR
+(*
+Robot Definition*)
+VAR
+	MC_BR_MoveProgram_X : MC_BR_MoveProgram;
+	MC_BR_GroupPower_X : MC_BR_GroupPower;
+	MC_GroupStop_X : MC_GroupStop;
+	MC_GroupReset_X : MC_GroupReset;
+	MC_BR_GroupHome_X : MC_BR_GroupHome_15; (*Group object to home axis group*)
+	MC_BR_GroupReadInfo_X : MC_BR_GroupReadInfo;
+	MC_GroupContinue_X : MC_GroupContinue; (*Continue Interpreter in case of a new tracking Object*)
+	MC_BR_TrackingStatus_PathGen_X : MC_BR_TrackingStatus_PathGen; (*Tracking Path, read all objects on Path*)
+	MC_BR_PathInfo_X : MC_BR_PathInfo;
+	MC_GroupReadStatus_X : MC_GroupReadStatus; (*Group object to home axis group*)
+	MC_BR_PauseWorkspaceMonitoring_X : MC_BR_PauseWorkspaceMonitoring;
+	MC_GroupReadActualPosition_X : MC_GroupReadActualPosition_15; (*Group object to home axis group*)
+END_VAR
+(*
+Variables used handling objects and reading informations about the robot*)
+VAR
+	MC_BR_TrackingPathGetFrames_In : MC_BR_TrackingPathGetFrames; (*Tracking Path, read all objects on Path*)
+	MC_BR_TrackingPathReadStatus_In : MC_BR_TrackingPathReadStatus;
+	MC_BR_TrackingPathGetFrames_Out : MC_BR_TrackingPathGetFrames; (*Tracking Path, read all objects on Path*)
+	MC_BR_TrackingPathReadStatus_Out : MC_BR_TrackingPathReadStatus;
+END_VAR
+(*
+Logic*)
+VAR
+	State : DeviceStatesListEnum; (*Statemachine*)
+	i : INT; (*loop counter*)
+	j : INT; (*loop counter*)
+	XPosMax : LREAL; (*Figure out object with min distance to the robot*)
+	FeedrateReduction : LREAL; (*Feedrate reduction calculated based on the distance*)
+	Products_Out : ARRAY[0..MAX_TRACKING_FRAMES] OF McTrkFrmInfoType; (*List of all Frames*)
+	Products_In : ARRAY[0..MAX_TRACKING_FRAMES] OF McTrkFrmInfoType; (*List of all Frames*)
+END_VAR
+(*
+Scene Viewer*)
+VAR
+	ProdDetails : REFERENCE TO ProductDetailsType; (*Scene Viewer*)
+	PickTrackingObjectDetails : REFERENCE TO ProductDetailsType; (*Scene Viewer*)
+	PlaceTrackingObjectDetails : REFERENCE TO ProductDetailsType; (*Scene Viewer*)
+	Grab1Closed : BOOL;
+	Grab2Closed : BOOL;
+END_VAR
+(*
+ST Var*)
+VAR
+	MinPlacePosX : LREAL := 0; (*ST Var - Maximum reachable x position*)
+	MaxPlacePosX : LREAL := 0; (*ST Var - Maximum reachable x position*)
+	MinPickPosX : LREAL := 0; (*ST Var - Maximum reachable x position*)
+	MaxPickPosX : LREAL := 0; (*ST Var - Maximum reachable x position*)
+	PlaceTrackingObject : UDINT; (*ST Var - ADR(ProductDetailsType)*)
+	PickTrackingObject : UDINT; (*ST Var - ADR(ProductDetailsType)*)
+	M8 : BOOL; (*ST Var*)
+	M9 : BOOL; (*ST Var*)
+	M16 : BOOL; (*ST Var*)
+	M17 : BOOL; (*ST Var*)
+	M20 : BOOL; (*ST Var*)
+	M21 : BOOL; (*ST Var*)
+END_VAR
+(*
+Monitorin Elements*)
+VAR
+	BasicMonitor : McPathGenMonElemBasicMonType; (*Monitor to get interpreter line*)
+	IPMonitor : McProgIntIpMonitorType; (*Monitor to get interpreter line*)
+END_VAR

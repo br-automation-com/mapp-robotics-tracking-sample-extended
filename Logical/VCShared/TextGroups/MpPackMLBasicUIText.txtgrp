@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.6.114 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpPackMLBasicUIText">
+  <Property Name="Description" Value="General page text for PackMLBasicUI"/>
+  <Property Name="Index" Value="1170"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en-GB">
+    <Text ID="117718" Value="PackML modes statistics"/>
+    <Text ID="117719" Value="Current Mode"/>
+    <Text ID="117720" Value="Current State"/>
+    <Text ID="117721" Value="PackML states statistics"/>
+    <Text ID="117722" Value=""/>
+    <Text ID="117723" Value=""/>
+    <Text ID="117724" Value=""/>
+    <Text ID="117725" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="de-DE">
+    <Text ID="117718" Value="PackML modes statistics"/>
+    <Text ID="117719" Value="Aktueller Mode"/>
+    <Text ID="117720" Value="Aktueller Zustand"/>
+    <Text ID="117721" Value="PackML states statistics"/>
+    <Text ID="117722" Value=""/>
+    <Text ID="117723" Value=""/>
+    <Text ID="117724" Value=""/>
+    <Text ID="117725" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="it-IT">
+    <Text ID="117718" Value="Statistiche modi PackML"/>
+    <Text ID="117719" Value="Modo attuale"/>
+    <Text ID="117720" Value="Stato attuale"/>
+    <Text ID="117721" Value="Statistiche stati PackML"/>
+    <Text ID="117722" Value=""/>
+    <Text ID="117723" Value=""/>
+    <Text ID="117724" Value=""/>
+    <Text ID="117725" Value=""/>
+  </TextLayer>
+  <TextLayer LanguageId="fr-FR">
+    <Text ID="117718" Value="PackML modes statistics"/>
+    <Text ID="117719" Value="Current Mode"/>
+    <Text ID="117720" Value="Current State"/>
+    <Text ID="117721" Value="PackML states statistics"/>
+    <Text ID="117722" Value=""/>
+    <Text ID="117723" Value=""/>
+    <Text ID="117724" Value=""/>
+    <Text ID="117725" Value=""/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="117718" Value="0"/>
+    <Index ID="117719" Value="1"/>
+    <Index ID="117720" Value="2"/>
+    <Index ID="117721" Value="3"/>
+    <Index ID="117722" Value="4"/>
+    <Index ID="117723" Value="5"/>
+    <Index ID="117724" Value="6"/>
+    <Index ID="117725" Value="7"/>
+  </IndexMap>
+</TextGroup>

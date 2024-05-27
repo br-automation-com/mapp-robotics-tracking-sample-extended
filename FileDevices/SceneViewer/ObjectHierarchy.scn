@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Object objecttypeid="1" name="Object Hierarchy" visible="1">
+	<ParID parid="80" val="0"/>
+	<ParID parid="81" val="60"/>
+	<ParID parid="82" val="1.43879867"/>
+	<ParID parid="90" val="0"/>
+	<ParID parid="100" val="1.22172976"/>
+	<ParID parid="101" val="-499.998932"/>
+	<ParID parid="102" val="866.025391"/>
+	<ParID parid="103" val="0"/>
+	<ParID parid="104" val="0.5"/>
+	<ParID parid="105" val="-0.866025388"/>
+	<ParID parid="106" val="0"/>
+	<ParID parid="107" val="0.866025388"/>
+	<ParID parid="108" val="0.5"/>
+	<ParID parid="110" val="0.25"/>
+	<ParID parid="120" val="1,1,1"/>
+	<ParID parid="140" val="0.75,0.75,0.75"/>
+	<Object objecttypeid="2" name="Light 1" visible="1">
+		<ParID parid="100" val="1500"/>
+		<ParID parid="101" val="-3000"/>
+		<ParID parid="102" val="-3000"/>
+		<ParID parid="130" val="1"/>
+		<ParID parid="140" val="1,1,1"/>
+		<ParID parid="150" val="FALSE"/>
+	</Object>
+	<Object objecttypeid="2" name="Light 2" visible="1">
+		<ParID parid="100" val="0"/>
+		<ParID parid="101" val="0"/>
+		<ParID parid="102" val="6000"/>
+		<ParID parid="130" val="1"/>
+		<ParID parid="140" val="1,1,1"/>
+		<ParID parid="150" val="FALSE"/>
+	</Object>
+	<Object objecttypeid="251" name="GlobalCoordinateSystem" visible="1">
+		<ParID parid="100" val="0"/>
+		<ParID parid="101" val="0"/>
+		<ParID parid="102" val="0"/>
+		<ParID parid="103" val="0"/>
+		<ParID parid="104" val="0"/>
+		<ParID parid="105" val="0"/>
+		<ParID parid="120" val="GlobalCoordinateSystem"/>
+		<ParID parid="124" val="500"/>
+		<ParID parid="125" val="1"/>
+		<Object objecttypeid="251" name="gTrackingPathConveyorIn" visible="1">
+			<ParID parid="100" val="-1000"/>
+			<ParID parid="101" val="0"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="0"/>
+			<ParID parid="104" val="-0"/>
+			<ParID parid="105" val="0"/>
+			<ParID parid="120" val="gTrackingPathConveyorIn"/>
+			<ParID parid="124" val="250"/>
+			<ParID parid="125" val="1"/>
+			<Object objecttypeid="350" name="Frame name" visible="1" jointoparent="1">
+				<ParID parid="100" val="50"/>
+				<ParID parid="101" val="50"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="130" val="0,0,0"/>
+				<ParID parid="131" val="1"/>
+				<ParID parid="200" val=""/>
+				<ParID parid="201" val="gTrackingPathConveyorIn"/>
+			</Object>
+			<Object objecttypeid="350" name="TrkPath name" visible="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="130" val="0,0,0"/>
+				<ParID parid="131" val="1"/>
+				<ParID parid="200" val=""/>
+				<ParID parid="201" val="gTrackingPathConveyorIn"/>
+			</Object>
+			<Object objecttypeid="1450" name="Content" visible="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="200" val="DIAG|gTrackingPathConveyorIn.sceneViewerGetFrames"/>
+				<ParID parid="250" val="scale(0.500000,0.500000,0.500000)draw(0)"/>
+			</Object>
+		</Object>
+		<Object objecttypeid="251" name="MachineFrame (gAxesGroup_D5r1100R_1) [MCS]" visible="1">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="0"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="179.979996"/>
+			<ParID parid="104" val="179.929993"/>
+			<ParID parid="105" val="-179.999969"/>
+			<ParID parid="120" val="MachineFrame (gAxesGroup_D5r1100R_1)"/>
+			<ParID parid="124" val="250"/>
+			<ParID parid="125" val="1"/>
+			<Object objecttypeid="350" name="Frame name" visible="1" jointoparent="1">
+				<ParID parid="100" val="50"/>
+				<ParID parid="101" val="50"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="130" val="0,0,0"/>
+				<ParID parid="131" val="1"/>
+				<ParID parid="200" val=""/>
+				<ParID parid="201" val="MachineFrame (gAxesGroup_D5r1100R_1)"/>
+			</Object>
+			<Object objecttypeid="250" name="Workspace" visible="1" showAs="Workspace">
+				<ParID parid="125" val="0"/>
+				<Object objecttypeid="250" name="SafeSpace" visible="1" showAs="Instance">
+					<ParID parid="125" val="0"/>
+					<Object objecttypeid="310" name="Cuboid ID = 1" visible="1" trait="1">
+						<ParID parid="100" val="-500"/>
+						<ParID parid="101" val="400"/>
+						<ParID parid="102" val="-100"/>
+						<ParID parid="103" val="0"/>
+						<ParID parid="104" val="0"/>
+						<ParID parid="105" val="0"/>
+						<ParID parid="110" val="1000"/>
+						<ParID parid="111" val="600"/>
+						<ParID parid="112" val="400"/>
+						<ParID parid="120" val="1: Red Matte"/>
+						<ParID parid="121" val="1"/>
+						<ParID parid="122" val="0.400000006"/>
+						<ParID parid="130" val="0.59999999999999998,0.10000000000000001,0.10000000000000001"/>
+						<ParID parid="140" val="2"/>
+					</Object>
+				</Object>
+				<Object objecttypeid="250" name="WorkSpace" visible="1" showAs="Instance">
+					<ParID parid="125" val="0"/>
+				</Object>
+			</Object>
+			<Object objecttypeid="251" name="RobotBase [BCS]" visible="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="1000"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="-0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="120" val="RobotBase"/>
+				<ParID parid="124" val="150"/>
+				<ParID parid="125" val="1"/>
+				<Object objecttypeid="350" name="Frame name" visible="0" jointoparent="1">
+					<ParID parid="100" val="50"/>
+					<ParID parid="101" val="50"/>
+					<ParID parid="102" val="0"/>
+					<ParID parid="130" val="0,0,0"/>
+					<ParID parid="131" val="1"/>
+					<ParID parid="200" val=""/>
+					<ParID parid="201" val="RobotBase"/>
+				</Object>
+				<Object objecttypeid="780" name="MechSys_D5r1100R_1" visible="1" binding="#210*DIAG|gAxesGroup_D5r1100R_1.JACSPosition0#211*DIAG|gAxesGroup_D5r1100R_1.JACSPosition1#212*DIAG|gAxesGroup_D5r1100R_1.JACSPosition2#213*DIAG|gAxesGroup_D5r1100R_1.JACSPosition3#214*DIAG|gAxesGroup_D5r1100R_1.JACSPosition4">
+					<ParID parid="100" val="0"/>
+					<ParID parid="101" val="0"/>
+					<ParID parid="102" val="0"/>
+					<ParID parid="103" val="0"/>
+					<ParID parid="104" val="0"/>
+					<ParID parid="105" val="0"/>
+					<ParID parid="130" val="6: Orange Matte"/>
+					<ParID parid="131" val="6: Orange Matte"/>
+					<ParID parid="132" val="3: Grey Matte"/>
+					<ParID parid="133" val="5: Green Matte"/>
+					<ParID parid="140" val="0"/>
+					<ParID parid="141" val="0"/>
+					<ParID parid="142" val="0"/>
+					<ParID parid="143" val="0"/>
+					<ParID parid="144" val="200"/>
+					<ParID parid="145" val="-90"/>
+					<ParID parid="146" val="-120"/>
+					<ParID parid="147" val="200"/>
+					<ParID parid="148" val="-90"/>
+					<ParID parid="149" val="-240"/>
+					<ParID parid="150" val="200"/>
+					<ParID parid="151" val="-90"/>
+					<ParID parid="152" val="320"/>
+					<ParID parid="153" val="320"/>
+					<ParID parid="154" val="320"/>
+					<ParID parid="155" val="850"/>
+					<ParID parid="156" val="850"/>
+					<ParID parid="157" val="850"/>
+					<ParID parid="158" val="66"/>
+					<ParID parid="159" val="0"/>
+					<ParID parid="160" val="66"/>
+					<ParID parid="161" val="0"/>
+					<ParID parid="162" val="66"/>
+					<ParID parid="163" val="0"/>
+					<ParID parid="164" val="27.5"/>
+					<ParID parid="165" val="0"/>
+					<ParID parid="166" val="0"/>
+					<ParID parid="167" val="0"/>
+					<ParID parid="168" val="0"/>
+					<ParID parid="169" val="-74.9000015"/>
+					<ParID parid="170" val="0"/>
+					<ParID parid="171" val="0"/>
+					<ParID parid="172" val="-80"/>
+					<ParID parid="180" val="0"/>
+					<ParID parid="210" val="0"/>
+					<ParID parid="211" val="0"/>
+					<ParID parid="212" val="0"/>
+					<ParID parid="213" val="0"/>
+					<ParID parid="214" val="0"/>
+					<ParID parid="220" val="100"/>
+					<ParID parid="221" val="0"/>
+					<ParID parid="222" val="-430.562012"/>
+					<ParID parid="223" val="0"/>
+					<ParID parid="224" val="0"/>
+				</Object>
+				<Object objecttypeid="250" name="Working range {end-effector platform}" visible="1" showAs="Workspace">
+					<ParID parid="100" val="0"/>
+					<ParID parid="101" val="0"/>
+					<ParID parid="102" val="-706"/>
+					<ParID parid="103" val="0"/>
+					<ParID parid="104" val="0"/>
+					<ParID parid="105" val="0"/>
+					<ParID parid="124" val="0"/>
+					<Object objecttypeid="1020" name="Top" visible="1" jointoparent="1" trait="3">
+						<ParID parid="100" val="0"/>
+						<ParID parid="101" val="0"/>
+						<ParID parid="102" val="-40"/>
+						<ParID parid="103" val="0"/>
+						<ParID parid="104" val="0"/>
+						<ParID parid="105" val="0"/>
+						<ParID parid="110" val="551"/>
+						<ParID parid="111" val="517"/>
+						<ParID parid="112" val="40"/>
+						<ParID parid="120" val="5: Green Matte"/>
+						<ParID parid="121" val="1"/>
+						<ParID parid="122" val="0.25"/>
+						<ParID parid="130" val="0.10000000000000001,0.69999999999999996,0.10000000000000001"/>
+						<ParID parid="140" val="1"/>
+						<ParID parid="142" val="1"/>
+						<ParID parid="143" val="0"/>
+					</Object>
+					<Object objecttypeid="1020" name="Middle" visible="1" jointoparent="1" trait="3">
+						<ParID parid="100" val="0"/>
+						<ParID parid="101" val="0"/>
+						<ParID parid="102" val="-250"/>
+						<ParID parid="103" val="0"/>
+						<ParID parid="104" val="0"/>
+						<ParID parid="105" val="0"/>
+						<ParID parid="110" val="551"/>
+						<ParID parid="111" val="551"/>
+						<ParID parid="112" val="210"/>
+						<ParID parid="120" val="5: Green Matte"/>
+						<ParID parid="121" val="1"/>
+						<ParID parid="122" val="0.25"/>
+						<ParID parid="130" val="0.10000000000000001,0.69999999999999996,0.10000000000000001"/>
+						<ParID parid="140" val="1"/>
+						<ParID parid="142" val="0"/>
+						<ParID parid="143" val="0"/>
+					</Object>
+					<Object objecttypeid="1020" name="Bottom" visible="1" jointoparent="1" trait="3">
+						<ParID parid="100" val="0"/>
+						<ParID parid="101" val="0"/>
+						<ParID parid="102" val="-400"/>
+						<ParID parid="103" val="0"/>
+						<ParID parid="104" val="0"/>
+						<ParID parid="105" val="0"/>
+						<ParID parid="110" val="335"/>
+						<ParID parid="111" val="551"/>
+						<ParID parid="112" val="150"/>
+						<ParID parid="120" val="5: Green Matte"/>
+						<ParID parid="121" val="1"/>
+						<ParID parid="122" val="0.25"/>
+						<ParID parid="130" val="0.10000000000000001,0.69999999999999996,0.10000000000000001"/>
+						<ParID parid="140" val="1"/>
+						<ParID parid="142" val="0"/>
+						<ParID parid="143" val="1"/>
+					</Object>
+				</Object>
+			</Object>
+			<Object objecttypeid="251" name="UserFrame1" visible="0">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="-0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="120" val="UserFrame1"/>
+				<ParID parid="124" val="150"/>
+				<ParID parid="125" val="0"/>
+				<Object objecttypeid="350" name="Frame name" visible="0" jointoparent="1">
+					<ParID parid="100" val="50"/>
+					<ParID parid="101" val="50"/>
+					<ParID parid="102" val="0"/>
+					<ParID parid="130" val="0,0,0"/>
+					<ParID parid="131" val="1"/>
+					<ParID parid="200" val=""/>
+					<ParID parid="201" val="UserFrame1"/>
+				</Object>
+			</Object>
+		</Object>
+		<Object objecttypeid="251" name="gTrackingPathConveyorOut" visible="1">
+			<ParID parid="100" val="0"/>
+			<ParID parid="101" val="1000"/>
+			<ParID parid="102" val="0"/>
+			<ParID parid="103" val="90"/>
+			<ParID parid="104" val="180"/>
+			<ParID parid="105" val="180"/>
+			<ParID parid="120" val="gTrackingPathConveyorOut"/>
+			<ParID parid="124" val="250"/>
+			<ParID parid="125" val="1"/>
+			<Object objecttypeid="350" name="Frame name" visible="1" jointoparent="1">
+				<ParID parid="100" val="50"/>
+				<ParID parid="101" val="50"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="130" val="0,0,0"/>
+				<ParID parid="131" val="1"/>
+				<ParID parid="200" val=""/>
+				<ParID parid="201" val="gTrackingPathConveyorOut"/>
+			</Object>
+			<Object objecttypeid="350" name="TrkPath name" visible="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="130" val="0,0,0"/>
+				<ParID parid="131" val="1"/>
+				<ParID parid="200" val=""/>
+				<ParID parid="201" val="gTrackingPathConveyorOut"/>
+			</Object>
+			<Object objecttypeid="1450" name="Content" visible="1">
+				<ParID parid="100" val="0"/>
+				<ParID parid="101" val="0"/>
+				<ParID parid="102" val="0"/>
+				<ParID parid="103" val="0"/>
+				<ParID parid="104" val="0"/>
+				<ParID parid="105" val="0"/>
+				<ParID parid="200" val="DIAG|gTrackingPathConveyorOut.sceneViewerGetFrames"/>
+				<ParID parid="250" val="scale(0.500000,0.500000,0.500000)draw(0)"/>
+			</Object>
+		</Object>
+	</Object>
+</Object>
+<Materials>
+	<Material ID="0" Name="Undefined" Ambient="0.10000000000000001 0.10000000000000001 0.10000000000000001 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="32"/>
+	<Material ID="1" Name="Red Matte" Ambient="0.69999999999999996 0.050000000000000003 0.050000000000000003 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="2" Name="Blue Matte" Ambient="0.10000000000000001 0.10000000000000001 0.80000000000000004 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="3" Name="Grey Matte" Ambient="0.40000000000000002 0.40000000000000002 0.40000000000000002 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="4" Name="Yellow Matte" Ambient="0.80000000000000004 0.80000000000000004 0 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="5" Name="Green Matte" Ambient="0.10000000000000001 0.80000000000000004 0.10000000000000001 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="6" Name="Orange Matte" Ambient="0.80000000000000004 0.40000000000000002 0 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="7" Name="White Matte" Ambient="0.90000000000000002 0.90000000000000002 0.90000000000000002 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="8" Name="Black Matte" Ambient="0.10000000000000001 0.10000000000000001 0.10000000000000001 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="9" Name="Violet Matte" Ambient="0.69999999999999996 0 0.69999999999999996 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="10" Name="Metal Shine" Ambient="0.20000000000000001 0.20000000000000001 0.20000000000000001 1" Specular="0.80000000000000004 0.80000000000000004 1 1" Emission="0 0 0 1" Shininess="25"/>
+	<Material ID="11" Name="Red Metal Shine" Ambient="0.59999999999999998 0 0 1" Specular="1 0.69999999999999996 0.69999999999999996 1" Emission="0 0 0 1" Shininess="10"/>
+	<Material ID="12" Name="Yellow Metal Shine" Ambient="0.5 0.5 0 1" Specular="0.59999999999999998 0.59999999999999998 0.84999999999999998 1" Emission="0 0 0 1" Shininess="25"/>
+	<Material ID="13" Name="Black Metal Shine" Ambient="0.20000000000000001 0.20000000000000001 0.20000000000000001 1" Specular="0.5 0.5 0.5 1" Emission="0 0 0 1" Shininess="12.5"/>
+	<Material ID="14" Name="Cyan Matte" Ambient="0 0.5 0.5 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="15" Name="Magenta Matte" Ambient="0.5 0 0.5 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="16" Name="Light Grey Matte" Ambient="0.69999999999999996 0.69999999999999996 0.69999999999999996 1" Specular="0 0 0 1" Emission="0 0 0 1" Shininess="64"/>
+	<Material ID="17" Name="Cerulean Blue Shine" Ambient="0 0.54000000000000004 0.75 1" Specular="0.59999999999999998 0.59999999999999998 0.84999999999999998 1" Emission="0 0 0 1" Shininess="25"/>
+	<Material ID="18" Name="Silver" Ambient="0.55000000000000004 0.59999999999999998 0.65000000000000002 1" Specular="0.5 0.55000000000000004 0.59999999999999998 1" Emission="0 0 0 1" Shininess="64"/>
+</Materials>
+<Views>
+	<View ID="1" Name="gTrackingPathConveyorIn" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="0 0.50000000000000011 -0.8660254037844386" AxisOrientation="0 0.8660254037844386 0.50000000000000011"/>
+	<View ID="2" Name="gTrackingPathConveyorIn Top" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="0 0 -1" AxisOrientation="0 1 0"/>
+	<View ID="3" Name="gTrackingPathConveyorIn Left" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="0 1 0" AxisOrientation="0 0 1"/>
+	<View ID="4" Name="gTrackingPathConveyorIn Front" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="-1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="5" Name="gTrackingPathConveyorIn Bottom" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="0 0 1" AxisOrientation="0 -1 0"/>
+	<View ID="6" Name="gTrackingPathConveyorIn Right" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="0 -1 0" AxisOrientation="0 0 1"/>
+	<View ID="7" Name="gTrackingPathConveyorIn Back" Zoom="0" Perspective="0" ViewPoint="-1000 0 0" ViewVector="1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="8" Name="gAxesGroup_D5r1100R_1" Zoom="1.333798672357607" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 0.50000000000000011 -0.8660254037844386" AxisOrientation="0 0.8660254037844386 0.50000000000000011"/>
+	<View ID="9" Name="gAxesGroup_D5r1100R_1 Top" Zoom="1.333798672357607" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 0 -1" AxisOrientation="0 1 0"/>
+	<View ID="10" Name="gAxesGroup_D5r1100R_1 Left" Zoom="1.3333331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 1 0" AxisOrientation="0 0 1"/>
+	<View ID="11" Name="gAxesGroup_D5r1100R_1 Front" Zoom="1.3333331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="-1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="12" Name="gAxesGroup_D5r1100R_1 Bottom" Zoom="1.333798672357607" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 0 1" AxisOrientation="0 -1 0"/>
+	<View ID="13" Name="gAxesGroup_D5r1100R_1 Right" Zoom="1.3333331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 -1 0" AxisOrientation="0 0 1"/>
+	<View ID="14" Name="gAxesGroup_D5r1100R_1 Back" Zoom="1.3333331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="15" Name="gTrackingPathConveyorOut" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="0 0.50000000000000011 -0.8660254037844386" AxisOrientation="0 0.8660254037844386 0.50000000000000011"/>
+	<View ID="16" Name="gTrackingPathConveyorOut Top" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="0 0 -1" AxisOrientation="0 1 0"/>
+	<View ID="17" Name="gTrackingPathConveyorOut Left" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="0 1 0" AxisOrientation="0 0 1"/>
+	<View ID="18" Name="gTrackingPathConveyorOut Front" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="-1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="19" Name="gTrackingPathConveyorOut Bottom" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="0 0 1" AxisOrientation="0 -1 0"/>
+	<View ID="20" Name="gTrackingPathConveyorOut Right" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="0 -1 0" AxisOrientation="0 0 1"/>
+	<View ID="21" Name="gTrackingPathConveyorOut Back" Zoom="0" Perspective="0" ViewPoint="0 1000 0" ViewVector="1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="22" Name="GlobalCoordinateSystem" Zoom="1" Perspective="0" ViewPoint="0 0 0" ViewVector="0 0.50000000000000011 -0.8660254037844386" AxisOrientation="0 0.8660254037844386 0.50000000000000011"/>
+	<View ID="23" Name="Overview" Zoom="1.4387986723576072" Perspective="0" ViewPoint="1.2217297072647852 -499.99893383943146 866.02540378443859" ViewVector="0 0.50000000000000011 -0.8660254037844386" AxisOrientation="0 0.8660254037844386 0.50000000000000011"/>
+	<View ID="24" Name="Top" Zoom="1.4387986723576072" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 0 -1" AxisOrientation="0 1 0"/>
+	<View ID="25" Name="Left" Zoom="1.4383331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 1 0" AxisOrientation="0 0 1"/>
+	<View ID="26" Name="Front" Zoom="1.4383331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="-1 0 0" AxisOrientation="0 0 1"/>
+	<View ID="27" Name="Bottom" Zoom="1.4387986723576072" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 0 1" AxisOrientation="0 -1 0"/>
+	<View ID="28" Name="Right" Zoom="1.4383331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="0 -1 0" AxisOrientation="0 0 1"/>
+	<View ID="29" Name="Back" Zoom="1.4383331911784101" Perspective="0" ViewPoint="1.2217297072647852 0.0010661605687118936 997.55579367742848" ViewVector="1 0 0" AxisOrientation="0 0 1"/>
+</Views>

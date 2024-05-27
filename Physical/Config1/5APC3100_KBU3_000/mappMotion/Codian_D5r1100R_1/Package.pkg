@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mMoPredefinedCfgPackage" PackageType="mMoPredefinedCfgPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Config_6.axesgroup</Object>
+    <Object Type="File">Config_7.axis</Object>
+    <Object Type="File" Description="Migrated from Config_8.mechanicalsystem (mapp Motion Version 5)">Config_8.mechanicalsystem</Object>
+    <Object Type="File" Description="Migrated from Config_9.axesgroupfeature (mapp Motion Version 5)">Config_9.axesgroupfeature</Object>
+    <Object Type="File">Config_2.workspace</Object>
+    <Object Type="File">Config_4.dynpartable</Object>
+    <Object Type="File">Config_5.tooltable</Object>
+    <Object Type="File">Config_10.dynpartable</Object>
+    <Object Type="File">Config_11.tool</Object>
+  </Objects>
+</Package>

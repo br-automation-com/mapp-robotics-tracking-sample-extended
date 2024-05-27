@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.6.114 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="Mp_httpURL_SDM">
+  <Property Name="Description" Value="URL Texts for SDM"/>
+  <Property Name="Index" Value="999"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en-GB">
+    <Text ID="94284" Value="http://localhost/sdm-vga/vga.cgi"/>
+  </TextLayer>
+  <TextLayer LanguageId="de-DE">
+    <Text ID="94284" Value="http://localhost/sdm-vga/vga.cgi"/>
+  </TextLayer>
+  <TextLayer LanguageId="it-IT">
+    <Text ID="94284" Value="http://localhost/sdm-vga/vga.cgi"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr-FR">
+    <Text ID="94284" Value="http://localhost/sdm-vga/vga.cgi"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="94284" Value="1"/>
+  </IndexMap>
+</TextGroup>

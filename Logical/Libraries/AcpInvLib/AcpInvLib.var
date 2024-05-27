@@ -1,0 +1,20 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Library: AcpInvLib
+ * File: AcpInvLib.var
+ * Author: guglielmia
+ * Created: October 14, 2011
+ ********************************************************************
+ * Constants of library AcpInvLib
+ ********************************************************************)
+VAR CONSTANT
+	ACPINV_MAX_USER_PARAMS : USINT := 9;
+	ACPINV_MAX_PAR_NAME_LEN : USINT := 15;
+END_VAR
+(*--------------------- ERRORS -------------------------------------------------------------------------------------------------------------------------------*)
+VAR CONSTANT
+	ACP_INV_ER_WRITE_PARAM_NULL : UINT := 1;
+	ACP_INV_ER_READ_PARAM_NULL : UINT := 2;
+	ACP_INV_ER_TUNE_WRONG_CFG : UINT := 3;
+END_VAR

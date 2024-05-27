@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gTrackingPathConveyorOut" Type="trackingpath" Description="Tracking Path with moving objects">
+    <Selector ID="Type" Value="Linear">
+      <Selector ID="MotionSource" Value="Axis">
+        <Property ID="AxisRef" Value="AxConveyorOut" />
+        <Selector ID="AxisUsage">
+          <Selector ID="CommandConsideration" Value="SupportBasicCommands" />
+        </Selector>
+      </Selector>
+    </Selector>
+    <Selector ID="SceneViewerObject" Value="Used" />
+    <Selector ID="Alarms" Value="None" />
+  </Element>
+  <Element ID="gTrackingPathConveyorIn" Type="trackingpath" Description="Tracking Path with moving objects">
+    <Selector ID="Type" Value="Linear">
+      <Selector ID="MotionSource" Value="Axis">
+        <Property ID="AxisRef" Value="AxConveyorIn" />
+      </Selector>
+    </Selector>
+    <Selector ID="SceneViewerObject" Value="Used" />
+    <Selector ID="Alarms" Value="None" />
+  </Element>
+</Configuration>

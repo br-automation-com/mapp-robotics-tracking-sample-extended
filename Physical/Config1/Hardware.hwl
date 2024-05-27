@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="09/07/2023 12:34:42" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="8BVIxxxxxxDx.xxx-x1" Type="8BVIxxxxxxDx.xxx-x" X="512" Y="249" />
+    <Module Name="8EIxxxHxT1x.xxxx-1" Type="8EIxxxHxT1x.xxxx-1" X="686" Y="249" />
+    <Module Name="5APC3100_KBU3_000" Type="5APC3100.KBU3-000" X="115" Y="100" />
+    <Module Name="5AC901.IPLK-00" Type="5AC901.IPLK-00" X="120.8" Y="123" />
+    <Module Name="8BVIxxxxxxDx.xxx-x" Type="8BVIxxxxxxDx.xxx-x" X="782.2" Y="249" />
+    <Module Name="8EIxxxHxT1x.xxxx-1a" Type="8EIxxxHxT1x.xxxx-1" X="869.3" Y="249" />
+  </Modules>
+  <Links>
+    <Link From="5AC901.IPLK-00" To="8BVIxxxxxxDx.xxx-x1" FromPort="IF1" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="161.9" Y="131" />
+      <Point X="161.9" Y="131" />
+      <Point X="168.9" Y="131" />
+      <Point X="175" Y="131" />
+      <Point X="175" Y="256" />
+      <Point X="511.900024" Y="256" />
+      <Point X="523.9" Y="256" />
+      <Point X="523.9" Y="256" />
+    </Link>
+    <Link From="8BVIxxxxxxDx.xxx-x" To="8EIxxxHxT1x.xxxx-1" FromPort="PLK1" ToPort="PLK2" IsRoutedByUser="False">
+      <Point X="794.100037" Y="256" />
+      <Point X="794.100037" Y="256" />
+      <Point X="782.100037" Y="256" />
+      <Point X="775" Y="256" />
+      <Point X="775" Y="235" />
+      <Point X="702.1" Y="235" />
+      <Point X="702.1" Y="248.5" />
+      <Point X="702.1" Y="259.5" />
+      <Point X="702.1" Y="259.5" />
+    </Link>
+    <Link From="8BVIxxxxxxDx.xxx-x" To="8EIxxxHxT1x.xxxx-1a" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="806" Y="256" />
+      <Point X="806" Y="256" />
+      <Point X="820" Y="256" />
+      <Point X="820" Y="259.5" />
+      <Point X="869" Y="259.5" />
+      <Point X="877" Y="259.5" />
+      <Point X="877" Y="259.5" />
+    </Link>
+    <Link From="8BVIxxxxxxDx.xxx-x1" To="8EIxxxHxT1x.xxxx-1" FromPort="PLK2" ToPort="PLK1" IsRoutedByUser="False">
+      <Point X="535.8" Y="256" />
+      <Point X="535.8" Y="256" />
+      <Point X="549.8" Y="256" />
+      <Point X="549.8" Y="259.5" />
+      <Point X="685.7" Y="259.5" />
+      <Point X="693.7" Y="259.5" />
+      <Point X="693.7" Y="259.5" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>

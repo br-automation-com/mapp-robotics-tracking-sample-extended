@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package Version="5.00.0" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">MachineInterface.var</Object>
+    <Object Type="File" Reference="true">\FileDevices\GCode\ProdDetails.typ</Object>
+    <Object Type="File">MachineInterface.typ</Object>
+    <Object Type="Package">GeneralTexts</Object>
+    <Object Type="Package" Description="Global libraries">Libraries</Object>
+    <Object Type="Package" Description="Device: 1 axis positioner">Conveyor</Object>
+    <Object Type="Package">Robots</Object>
+    <Object Type="Package">Scene3D</Object>
+  </Objects>
+</Package>
