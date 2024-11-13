@@ -1,17 +1,15 @@
 # mapp-robotics-tracking-sample
 
 ## Introduction
-This sample serves as an introduction to the mapp Robotics tracking technology.
+This sample serves as an introduction to the mapp Robotics tracking technology with a Codian D5 robot.
 
 [DemoVideoOut.webm](https://github.com/user-attachments/assets/4cd81c92-82a7-4335-94d3-36d02113f416)
 
 ### Features
-* 5 variants of a delta application
-  * Standard pick&place
-  * Pick&place with conditional stop
+* multible mappMotion features are used in the demo
+  * Tracking on products out of workspace
+  * Product load switching
   * Pick&place with Multigripper
-  * Pre-palletizing
-  * Sorting of producs
 * Automatic scene generation for Scene Viewer 6.x
   
 
@@ -20,10 +18,10 @@ This sample serves as an introduction to the mapp Robotics tracking technology.
 * Automation Studio/Runtime 6.x
 * mapp Motion 6.2
 * Scene Viewer 6.1.x
-<img src="doc/img/Requirements.png" width="400"/>
+<img src="docs/img/Requirements.png" width="400"/>
 
 ## How-to
-* [Download the last release](https://github.com/br-automation-com/mapp-robotics-tracking-sample/releases)↑ of project and open with AS
+* [Download the last release](https://github.com/br-automation-com/mapp-robotics-extended-tracking-sample/releases)↑ of project and open with AS
 * Enable simulation, build and transfer the project. Wait for RUN.
 * Open a watch window and use the ::ControlPanel:Input structure to start different scenarios
 * Watch the action in Scene Viewer (User & Password: gmctest)
@@ -31,18 +29,94 @@ This sample serves as an introduction to the mapp Robotics tracking technology.
 
 ### Start application demo
 To select an application add the variable ControlPanel to the watch window. 
-<img src="doc/img/StartApplication.png" width="700"/>
+<img src="docs/img/StartApplication.png" width="700"/>
 
 The NC Programs (Track.st) are located directly in the project folder root. The file device reference is set to the FileDevices folder.
-<img src="doc/img/FileDevice.png" width="400"/>
+<img src="docs/img/FileDevice.png" width="400"/>
 
 
-## Feature Details
-| Title | Decription  | StartWith     |
-|:------|:------------|:--------------|
-| Sorting | While sorting, red an blue products are classified. The red products are placed on the outfeed belt and the blue products are placed at the fixed place. <br/><img src="doc/img/Sorting.svg"/><br/><img src="doc/img/Sorting.png"/> | <img src="doc/img/StartSorting.png"/> |
-| Pick and Place | The pick and place demo demonstrates picking a product from a moving belt and placing the product on another belt. <br/><img src="doc/img/PickNPlace.svg" /><br/><img src="doc/img/PickNPlace.png" /> | <img src="doc/img/StartPickNPlace.png" /> |
-| Multipick | The Multipick-Example takes products from two different frame and places the products at a fixed place position. <br/><img src="doc/img/Multipick.svg" /><br/><img src="doc/img/Multipick.png" /> | <img src="doc/img/StartMultipick.png" /> |
-| Conditional Stop | The conditional stop demo shows application with a fixed place position which may be locked with a conditional stop.<br/> In the demo the position is locked every 1,5 seconds for 1,5 seconds.  <br/><img src="doc/img/ConditionalStop.svg" /><br/><img src="doc/img/ConditionalStop.png" /> | <img src="doc/img/StartConditionalStop.png" /> |
-| Pre Palletizing | During pre-palletizing the robot stays synchronized to one frame. The product is shifted with movement commands on that frame. <br/><img src="doc/img/PrePalletizing.svg" /><br/><img src="doc/img/PrePalletizing.png" /> | <img src="doc/img/StartPrePalletizing.png" /> |
+## Detail application description
+The application example includes a Pick and Place application which takes products from an infeed belt and places them on an outfeed belt.
+With a Codian D5 robot the orientation of the products changes. 
 
+```
+
+PROGRAM _MAIN
+    MaxPickPosX  := 600;
+    MinPickPosX  := 0;
+    MaxPlacePosX := 600;
+    MinPlacePosX := 100;
+     
+    //Absolute();
+    Feedrate(15000);                        // default feedrate non rapid 
+    SetPCS(MachineFrame);                   // reset frame in case of restart
+    MoveAR(ParkPosA);
+    MoveLR(ParkPos);                        // move to par position
+    WaitTime(2.0);
+    InTracking := FALSE;
+    WHILE TRUE DO
+        IF PickTrackingObject <> 0 THEN                                       // A product is in area of interest, lets start
+             
+            InTracking := TRUE;                                             // Flag indication of tracking mode
+            ActObj ACCESS PickTrackingObject;                               // Access the pointer structure of an object           
+            TrackObjectR(ActObj.TrackingFrameID, TakePosUpSync, 50, 50);        // Move to the take position
+            MoveLR(TakePos1Down);                                           // Move from upper position to the height where the product is grapped
+            AccuracyHold();                                                 // Simulate Grabber close time
+            SetProductLoad('ProductLoad_1');                                // Change dynamic parameter
+            SetM(8);                                                        // Take the product
+            WaitUntilSync(PickTrackingObject <> ADR(ActObj));             // Wait until the next place slot is avaliable --> here is no fallback to track stop!
+            MoveLR(TakePos1Up);                                             // lift the product
+             
+            WaitUntil(PickTrackingObject <> 0);
+            ActObj ACCESS PickTrackingObject;                               // Access the pointer structure of an object
+            TrackObjectR(ActObj.TrackingFrameID, TakePos2Up, 50, 50);       // Move to the take position
+            MoveLR(TakePos2Down);                                           // Move from upper position to the height where the product may be grapped
+            AccuracyHold();                                                 // Simulate Grabber close time
+            SetProductLoad('ProductLoad_2');                                // Change dynamic parameter
+            SetM(9);                                                        // Take the product
+            WaitALAP();                                                     // wait here to select box target
+            MoveLR(TakePos3Up);                                             // lift the product
+             
+            IF PlaceTrackingObject = 0 THEN
+                TrackStopR(MachineFrame, ParkPos, 50, 50);                  // Call and wait for a box if nothing is there
+                WaitUntilSync(PlaceTrackingObject <> 0);                  // clear motion chain and wait
+            END_IF
+             
+            ActObj ACCESS PlaceTrackingObject;                              // Change reference to get frame ID
+            TrackObjectR(ActObj.TrackingFrameID, SynchPosUpPlace1, 50, 50); // Start positoin to place first element
+             
+            SetM(20);                                                       // Disable Workspace Monitoring
+            MoveLR(SynchPosDownPlace1);                                     // Move inside the box
+            MoveL(SynchPosDownPlace1_1);                                    // Move to place position of element 1
+            WaitTime(0.2);                                                  // Simulate Grabber open time
+            SetProductLoad('ProductLoad_1');                                // Change dynamic parameter
+            SetM(17);                                                       // place the product
+            MoveL(SynchPosDownPlace1);                                      // move back to inside box position
+            MoveLR(SynchPosUpPlace1);                                       // Move to outside box position
+             
+            MoveL(SynchPosUpPlace2);                                        // Change orientation to place next product
+            MoveL(SynchPosDownPlace2);                                      // Move inside the box
+            MoveL(SynchPosDownPlace2_1);                                    // place element 2
+            WaitTime(0.2);                                                  // Simulate Grabber open time
+            ResetProductLoad();
+            SetM(16);                                                       // place the product
+            MoveL(SynchPosDownPlace2);                                      // move back to inside start position
+            MoveLR(SynchPosUpPlace2);                                       // move to outside box position
+            SetM(21);                                                       // Enable Workspace Monitoring
+ 
+             
+        ELSE
+            IF InTracking THEN
+                TrackStopR(MachineFrame, ParkPos, 50, 50);                  // Call a track stop to move to an BCS park position
+            END_IF
+         
+            InTracking := FALSE;                                            // Flag indication of tracking mode
+            MoveLR(ParkPos);                                                // Move to park position
+            WaitEndMove();                                                  // Be sure that the movement has been stopped          
+            WaitIp();                                                       // wait until next product is avaliable
+        END_IF
+ 
+    END_WHILE
+     
+END_PROGRAM
+```
