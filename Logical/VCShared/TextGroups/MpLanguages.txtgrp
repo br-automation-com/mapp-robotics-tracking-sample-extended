@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.7.6.114 SP"?>
+<TextGroup xmlns="http://br-automation.co.at/AS/VC/Project" Name="MpLanguages">
+  <Property Name="Description" Value="Texts for languages"/>
+  <Property Name="Index" Value="997"/>
+  <TextSnippets/>
+  <TextLayer LanguageId="en-GB">
+    <Text ID="109759" Value="German"/>
+    <Text ID="109760" Value="English"/>
+    <Text ID="225725" Value="Italian"/>
+    <Text ID="225726" Value="French"/>
+  </TextLayer>
+  <TextLayer LanguageId="de-DE">
+    <Text ID="109759" Value="Deutsch"/>
+    <Text ID="109760" Value="Englisch"/>
+    <Text ID="225725" Value="Italian"/>
+    <Text ID="225726" Value="French"/>
+  </TextLayer>
+  <TextLayer LanguageId="it-IT">
+    <Text ID="109759" Value="Tedesco"/>
+    <Text ID="109760" Value="Inglese"/>
+    <Text ID="225725" Value="Italiano"/>
+    <Text ID="225726" Value="Francese"/>
+  </TextLayer>
+  <TextLayer LanguageId="fr-FR">
+    <Text ID="109759" Value="German"/>
+    <Text ID="109760" Value="English"/>
+    <Text ID="225725" Value="Italian"/>
+    <Text ID="225726" Value="French"/>
+  </TextLayer>
+  <IndexMap>
+    <Index ID="109759" Value="1"/>
+    <Index ID="109760" Value="0"/>
+    <Index ID="225725" Value="2"/>
+    <Index ID="225726" Value="3"/>
+  </IndexMap>
+</TextGroup>

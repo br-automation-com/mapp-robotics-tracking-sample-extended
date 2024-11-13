@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?AutomationStudio Version="4.10.3.60 SP"?>
+<Project xmlns="http://br-automation.co.at/AS/VC/Project">
+  <Property Name="EnableEvents" Value="True"/>
+  <Property Name="SharedTargetResourceRoot" Value=""/>
+  <Property Name="TextIDMax" Value="227585"/>
+  <SourceFiles>
+    <Source File="Languages.vcr"/>
+    <Source File="TextGroups\Mp_httpURL_SDM.txtgrp"/>
+    <Source File="TextGroups\MpDateTimeFormats.txtgrp"/>
+    <Source File="TextGroups\MpUserDialogHeader.txtgrp"/>
+    <Source File="TextGroups\MpUserUIMessageBox.txtgrp"/>
+    <Source File="TextGroups\MpUserXUIErrorText.txtgrp"/>
+    <Source File="TextGroups\MpUserGroups.txtgrp"/>
+    <Source File="TextGroups\MpLanguages.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIStatus.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIMessageBox.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUIText.txtgrp"/>
+    <Source File="TextGroups\mappComponents.txtgrp"/>
+    <Source File="TextGroups\MpPackMLCmds.txtgrp"/>
+    <Source File="TextGroups\MpPackMLModesNames.txtgrp"/>
+    <Source File="TextGroups\MpPackMLStateNames.txtgrp"/>
+    <Source File="TextGroups\MpPackMLBasicUIText.txtgrp"/>
+    <Source File="TextGroups\MpPackMLStatisticsText.txtgrp"/>
+    <Source File="TextGroups\MpPackMLStatisticsUIText.txtgrp"/>
+    <Source File="TextGroups\MpRecipeUISize.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListUIText.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListCode.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListState.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryUIText.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryCode.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryState.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListStatus.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXHistoryStatus.txtgrp"/>
+    <Source File="TextGroups\MpUserXUITexts.txtgrp"/>
+    <Source File="TextGroups\MpUserXDialogHeader.txtgrp"/>
+    <Source File="TextGroups\MpUserXNoYes.txtgrp"/>
+    <Source File="TextGroups\MpUserXRight.txtgrp"/>
+    <Source File="TextGroups\MpUserXRightLevel.txtgrp"/>
+    <Source File="TextGroups\MpUserUIErrorText.txtgrp"/>
+    <Source File="TextGroups\MpUserXUIMessageBox.txtgrp"/>
+    <Source File="TextGroups\MpUserXRoles.txtgrp"/>
+    <Source File="TextGroups\MpUserXConfirmText.txtgrp"/>
+    <Source File="TextGroups\MpAuditUIErrorText.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListEventID.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListRecordID.txtgrp"/>
+    <Source File="TextGroups\MpAlarmXListSeverity.txtgrp"/>
+    <Source File="TextGroups\Pages.txtgrp"/>
+    <Source File="UnitGroups\Length.vcug"/>
+    <Source File="UnitGroups\Mass.vcug"/>
+    <Source File="UnitGroups\Volume.vcug"/>
+    <Source File="UnitGroups\Power.vcug"/>
+    <Source File="UnitGroups\Memory.vcug"/>
+    <Source File="UnitGroups\Pressure.vcug"/>
+    <Source File="UnitGroups\Temperatures.vcug"/>
+    <Source File="UnitGroups\Energy.vcug"/>
+    <Source File="AlarmGroups\AlarmSystem.alcfg"/>
+    <Source File="AlarmGroups\SystemAlarms.algrp"/>
+    <Source File="DataSources\Internal.dso"/>
+    <Source File="DataSources\DataSource.dso"/>
+    <Source File="ControlVersion.cvinfo"/>
+  </SourceFiles>
+</Project>

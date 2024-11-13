@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="Software configuration">Cpu.sw</Object>
+    <Object Type="File" Description="Permanent variables">Cpu.per</Object>
+    <Object Type="File" Description="I/O mapping">IoMap.iom</Object>
+    <Object Type="File" Description="Variable mapping">PvMap.vvm</Object>
+    <Object Type="Package">mappView</Object>
+    <Object Type="Package">Connectivity</Object>
+    <Object Type="Package">TextSystem</Object>
+    <Object Type="Package">UnitSystem</Object>
+    <Object Type="Package">AccessAndSecurity</Object>
+    <Object Type="Package">mappMotion</Object>
+    <Object Type="Package">mappServices</Object>
+    <Object Type="Package">mappCockpit</Object>
+  </Objects>
+  <Configuration ModuleId="5APC3100.KBU3-000">
+    <AutomationRuntime Version="6.1.0" />
+    <Build GccVersion="11.3.0" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Safety SafetyRelease="0.0" />
+    <Transfer AddToUserPart="False" AdditionalUserDir="" AllowInitialTransfer="False" AllowPartitioning="False" CreatePIPEntryForOldTargets="true" ExecuteInitExitProgram="True" ForceInitialTransfer="False" IdentificationTypeValue="" IgnoreVersion="True" KeepNonVolatileMemory="True" ModuleSystemForPip="" PreserveVariableValues="True" ProjectConsistent="False" RebootDuringTransfer="False" SavedOfflineInstallationFolder="F:\" SavedPipDestinationFolder="" SavedRuntimeUtilityCenterPackagePath="" TargetIdentificationType="Always" TryToBootInRunMode="False" UserFilesIgnoreDifference="False" />
+    <Vc FirmwareVersion="" />
+    <OnlineConfiguration Name="APC3109Local" DeviceType="TCPIP" DeviceParameters="/IF=tcpip /LOPO=11159 /SA=1" ConnectionParameters="/COMT=2500 /COMT=1000 /AM=* /SDT=5 /IP=192.168.20.254 /PT=11159 /ANSL=1 /PT=11169" Description="" />
+  </Configuration>
+</Cpu>

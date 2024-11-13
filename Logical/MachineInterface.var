@@ -1,0 +1,13 @@
+(*Defines*)
+VAR CONSTANT
+	MAX_TRACKING_FRAMES : USINT := 40; (*Number of supported objects on the tracking frame*)
+	NUM_DEVICES : DINT := 2; (*Number of devices (Robots + Axis)*)
+END_VAR
+(*Stores the Devices Conveyor & Robot 1*)
+VAR CONSTANT
+	DEVICES_ARRAY : INT := NUM_DEVICES-1; (*Size of devices array*)
+END_VAR
+(*Internal states*)
+VAR
+	ControlPanel : ControlPanelType := (Input:=(Start:=FALSE,Reset:=FALSE,Conveyor1:=(YShift:=0,VelocityProduction:=20,ProductGap:=100,DeletePosition:=800),Conveyor2:=(YShift:=0,VelocityProduction:=200,IndexingDistance:=400,ProductGap:=450,DeletePosition:=2000),ProgramRobot1:='Track.st')); (*Machine interface (inputs/outputs)*)
+END_VAR

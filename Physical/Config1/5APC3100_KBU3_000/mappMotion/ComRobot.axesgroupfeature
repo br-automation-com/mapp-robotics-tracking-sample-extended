@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Feature_TrackingRobot" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Tracking">
+      <Group ID="MotionBehaviour">
+        <Selector ID="OutOfWorkspaceSynchronisation">
+          <Property ID="Clearance" Value="10" />
+        </Selector>
+      </Group>
+    </Selector>
+  </Element>
+  <Element ID="Feature_MFunctions" Type="axesgroupfeature">
+    <Selector ID="Type" Value="MFunctions">
+      <Group ID="MFunction[1]">
+        <Selector ID="IndexType">
+          <Property ID="Index" Value="8" />
+        </Selector>
+        <Selector ID="Blocking" Value="Disabled" />
+        <Selector ID="InSimulation" Value="Set" />
+        <Property ID="PvMapping" Value="::APP_Robot1:M8" />
+      </Group>
+      <Group ID="MFunction[2]">
+        <Selector ID="IndexType">
+          <Property ID="Index" Value="9" />
+        </Selector>
+        <Selector ID="Blocking" Value="Disabled" />
+        <Selector ID="InSimulation" Value="Set" />
+        <Property ID="PvMapping" Value="::APP_Robot1:M9" />
+      </Group>
+      <Group ID="MFunction[3]">
+        <Selector ID="IndexType">
+          <Property ID="Index" Value="16" />
+        </Selector>
+        <Selector ID="InSimulation" Value="Set" />
+        <Property ID="PvMapping" Value="::APP_Robot1:M16" />
+      </Group>
+      <Group ID="MFunction[4]">
+        <Selector ID="IndexType">
+          <Property ID="Index" Value="17" />
+        </Selector>
+        <Selector ID="InSimulation" Value="Set" />
+        <Property ID="PvMapping" Value="::APP_Robot1:M17" />
+      </Group>
+      <Group ID="MFunction[5]">
+        <Selector ID="IndexType">
+          <Property ID="Index" Value="20" />
+        </Selector>
+        <Property ID="PvMapping" Value="::APP_Robot1:M20" />
+      </Group>
+      <Group ID="MFunction[6]">
+        <Selector ID="IndexType">
+          <Property ID="Index" Value="21" />
+        </Selector>
+        <Property ID="PvMapping" Value="::APP_Robot1:M21" />
+      </Group>
+    </Selector>
+  </Element>
+  <Element ID="Feature_InterpreterLog" Type="axesgroupfeature">
+    <Selector ID="Type" Value="MotionPacketLog" />
+  </Element>
+  <Element ID="Feature_Monitoring" Type="axesgroupfeature">
+    <Selector ID="Type" Value="MonitoringElements">
+      <Group ID="CombinedElements">
+        <Property ID="BasicMonitor" Value="::APP_Robot1:BasicMonitor" />
+      </Group>
+      <Group ID="SingleElements">
+        <Selector ID="SingleElement[1]" Value="Interpreter">
+          <Property ID="IpMonitor" Value="::APP_Robot1:IPMonitor" />
+        </Selector>
+      </Group>
+    </Selector>
+  </Element>
+  <Element ID="Feature_PathDefRobot" Type="axesgroupfeature">
+    <Selector ID="Type" Value="PathDefinitions">
+      <Group ID="PathDefinition[1]">
+        <Selector ID="Type">
+          <Selector ID="CalculatedIn" Value="PCS" />
+        </Selector>
+      </Group>
+    </Selector>
+  </Element>
+  <Element ID="Feature_FrameHierachy" Type="axesgroupfeature">
+    <Selector ID="Type" Value="FrameHierarchy">
+      <Selector ID="FrameHierarchy" Value="Custom">
+        <Group ID="FramePropertyMapping">
+          <Property ID="BCS" Value="RobotBase" />
+        </Group>
+        <Group ID="MCS">
+          <Group ID="Frame[1]">
+            <Property ID="Name" Value="RobotBase" />
+            <Selector ID="Type">
+              <Group ID="Translation">
+                <Property ID="Z" Value="1000" />
+              </Group>
+            </Selector>
+          </Group>
+          <Group ID="Frame[2]">
+            <Property ID="Name" Value="UserFrame1" />
+          </Group>
+        </Group>
+      </Selector>
+    </Selector>
+  </Element>
+  <Element ID="Feature_WorkspaceMonitoring" Type="axesgroupfeature">
+    <Selector ID="Type" Value="WorkspaceMonitoring">
+      <Property ID="WorkspaceRef" Value="Workspace_1" />
+    </Selector>
+  </Element>
+  <Element ID="Feature_Signaling" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Signaling">
+      <Group ID="Prediction">
+        <Selector ID="Time" Value="Used">
+          <Property ID="Time" Value="0.045" />
+        </Selector>
+      </Group>
+      <Group ID="Signals">
+        <Group ID="UnconfiguredSignals">
+          <Selector ID="MissedSignalBehaviour" Value="DelayedOutputAndWarning" />
+        </Group>
+        <Group ID="Signal[1]">
+          <Property ID="Name" Value="Sig8" />
+          <Selector ID="Action">
+            <Property ID="Index" Value="8" />
+          </Selector>
+          <Selector ID="ReactionTime" Value="Used" />
+          <Selector ID="MissedSignalBehaviour" Value="DelayedOutputAndWarning" />
+        </Group>
+        <Group ID="Signal[2]">
+          <Property ID="Name" Value="Sig9" />
+          <Selector ID="Action">
+            <Property ID="Index" Value="9" />
+          </Selector>
+          <Selector ID="ReactionTime" Value="Used" />
+          <Selector ID="MissedSignalBehaviour" Value="DelayedOutputAndWarning" />
+        </Group>
+        <Group ID="Signal[3]">
+          <Property ID="Name" Value="Sig16" />
+          <Selector ID="Action">
+            <Property ID="Index" Value="16" />
+          </Selector>
+          <Selector ID="MissedSignalBehaviour" Value="DelayedOutputAndWarning" />
+        </Group>
+        <Group ID="Signal[4]">
+          <Property ID="Name" Value="Sig17" />
+          <Selector ID="Action">
+            <Property ID="Index" Value="17" />
+          </Selector>
+          <Selector ID="MissedSignalBehaviour" Value="DelayedOutputAndWarning" />
+        </Group>
+      </Group>
+    </Selector>
+  </Element>
+  <Element ID="Feature_Tool" Type="axesgroupfeature">
+    <Selector ID="Type" Value="Tools">
+      <Selector ID="Tools">
+        <Property ID="ToolTable" Value="ToolTable_1" />
+        <Property ID="Index" Value="3" />
+      </Selector>
+    </Selector>
+  </Element>
+</Configuration>

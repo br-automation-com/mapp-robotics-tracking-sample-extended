@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="ToolTable_1" Type="tooltable">
+    <Group ID="Row[1]">
+      <Property ID="Index" Value="3" />
+      <Property ID="ToolDataRef" Value="Tool_1" />
+      <Property ID="ToolDynParDataRef" Value="" />
+    </Group>
+    <Group ID="Row[2]">
+      <Property ID="ToolDynParDataRef" Value="ProductLoad_1" />
+    </Group>
+    <Group ID="Row[3]">
+      <Property ID="Index" Value="2" />
+      <Property ID="ToolDynParDataRef" Value="ProductLoad_2" />
+    </Group>
+  </Element>
+</Configuration>

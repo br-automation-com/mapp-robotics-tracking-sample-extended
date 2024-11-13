@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="Anonymous" Type="User">
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Everyone" />
+    </Group>
+  </Element>
+  <Element ID="gmctest" Type="User">
+    <Property ID="Password" Value="$argon2id$v=19$m=512,t=70,p=1$UdOYCBOnICBQ$RMcPQu4gmQomGHC5Zt+ngc0NyLmQ/vUJu0xFK383KI4" Description="gmctest" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="BR_Engineer" />
+      <Property ID="Role[2]" Value="Everyone" />
+    </Group>
+  </Element>
+</Configuration>
