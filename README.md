@@ -3,9 +3,7 @@
 ## Introduction
 This sample serves as an introduction to the mapp Robotics tracking technology with a Codian D5 robot.
 
-<video width="320" height="240" controls>
-  <source src="docs/vid/D5DemoVideo.mp4" type="video/mp4"/>
-</video>
+[![See demo video](docs/img/D5DemoVideo.png)](docs/vid/D5DemoVideo.mp4)
 
 ### Features
 * multible mappMotion features are used in the demo
