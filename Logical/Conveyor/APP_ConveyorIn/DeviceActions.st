@@ -86,17 +86,9 @@ ACTION applyBeltMovement:
 		IF NOT MC_MoveAdditive_0.Busy THEN
 			MC_MoveAdditive_0.Distance := ConvSettings.IndexingDistance;
 			MC_MoveAdditive_0.Velocity := ConvSettings.VelocityProduction;
-			MC_MoveAdditive_0.BufferMode := mcBLENDING_PREVIOUS;
+			MC_MoveAdditive_0.BufferMode := mcABORTING;
 			MC_MoveAdditive_0.Execute := TRUE;
-		END_IF
-		
-		IF NOT MC_MoveAdditive_1.Busy THEN
-			MC_MoveAdditive_1.Velocity := ConvSettings.VelocityProduction/10;
-			MC_MoveAdditive_1.Distance := ConvSettings.IndexingDistance/10;
-			MC_MoveAdditive_1.BufferMode := mcBLENDING_PREVIOUS;
-			MC_MoveAdditive_1.Execute := TRUE;
-		END_IF
-		
+		END_IF		
 	ELSE
 		MC_MoveVelocity_0.Velocity := ConvSettings.VelocityProduction;
 		MC_MoveVelocity_0.Execute := MC_MoveVelocity_0.InVelocity OR NOT MC_MoveVelocity_0.Busy;
@@ -139,17 +131,17 @@ ACTION resetFUBs:
 	IF MC_MoveAdditive_0.Error OR MC_MoveAdditive_0.CommandAborted OR MC_MoveAdditive_0.Busy OR MC_MoveAdditive_0.Done THEN
 		MC_MoveAdditive_0.Execute := FALSE;
 	END_IF
-	
-	IF MC_MoveAdditive_1.Error OR MC_MoveAdditive_1.CommandAborted OR MC_MoveAdditive_1.Busy OR MC_MoveAdditive_1.Done THEN
-		MC_MoveAdditive_1.Execute := FALSE;
-	END_IF
-	
+		
 	IF MC_Stop_0.Error OR MC_Stop_0.CommandAborted OR MC_Stop_0.Busy OR MC_Stop_0.Done THEN
 		MC_MoveAdditive_0.Execute := FALSE;
 	END_IF
 	
 	IF MC_BR_TrackingPathReset_0.Busy OR MC_BR_TrackingPathReset_0.Error OR MC_BR_TrackingPathReset_0.Done THEN
 		MC_BR_TrackingPathReset_0.Execute := FALSE;	
+	END_IF
+	
+	IF MC_BR_TrackingPathReadInfo_0.Error THEN
+		MC_BR_TrackingPathReadInfo_0.Enable := FALSE;
 	END_IF
 	
 	
@@ -176,17 +168,13 @@ ACTION initConveyor:
 	MC_BR_TrackingFrameCreate_0.Parameters.Orientation.Type := 0;
 	
 	MC_BR_TrackingPathReadStatus_0.Enable := TRUE;
+	MC_BR_TrackingPathReadInfo_0.Enable := TRUE;
 	
 	// Configuration of movement command
 	MC_MoveAdditive_0.Acceleration := 1000;
 	MC_MoveAdditive_0.Deceleration := 1000;
 	MC_MoveAdditive_0.Jerk := 10000;
 	MC_MoveAdditive_0.BufferMode := mcABORTING;
-	
-	MC_MoveAdditive_1.Acceleration := 1000;
-	MC_MoveAdditive_1.Deceleration := 1000;
-	MC_MoveAdditive_1.Jerk := 10000;
-	MC_MoveAdditive_1.BufferMode := mcBLENDING_NEXT;
 	
 	MC_MoveVelocity_0.Acceleration := 1000;
 	MC_MoveVelocity_0.Deceleration := 1000;
