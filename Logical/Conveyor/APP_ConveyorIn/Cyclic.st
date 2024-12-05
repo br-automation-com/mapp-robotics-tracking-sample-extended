@@ -101,7 +101,6 @@ PROGRAM _CYCLIC
 	
 	// movement fubs
 	MC_MoveAdditive_0(Axis := AxGroupLink);
-	MC_MoveAdditive_1(Axis := AxGroupLink);
 	MC_MoveVelocity_0(Axis := AxGroupLink);
 	MC_Stop_0(Axis := AxGroupLink);
 	
@@ -111,6 +110,7 @@ PROGRAM _CYCLIC
 	MC_BR_TrackingFrameDelete_0(TrackingPath := TrackLinkConveyor);
 	MC_BR_TrackingPathReset_0(TrackingPath := TrackLinkConveyor);
 	MC_BR_TrackingPathReadStatus_0(TrackingPath := TrackLinkConveyor);
+	MC_BR_TrackingPathReadInfo_0(TrackingPath := TrackLinkConveyor);
 	
 	// Update Scene Viewer positions
 	updateSceneViewerPositions;	

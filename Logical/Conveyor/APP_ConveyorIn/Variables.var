@@ -23,8 +23,8 @@ VAR
 	MC_MoveVelocity_0 : MC_MoveVelocity;
 	MC_BR_TrackingPathReset_0 : MC_BR_TrackingPathReset;
 	MC_BR_TrackingPathReadStatus_0 : MC_BR_TrackingPathReadStatus;
+	MC_BR_TrackingPathReadInfo_0 : MC_BR_TrackingPathReadInfo;
 	MC_Stop_0 : MC_Stop;
-	MC_MoveAdditive_1 : MC_MoveAdditive;
 	MC_MoveAdditive_0 : MC_MoveAdditive;
 	MC_BR_TrackingFrameDelete_0 : MC_BR_TrackingFrameDelete;
 	Products : ARRAY[0..MAX_TRACKING_FRAMES] OF McTrkFrmInfoType; (*Memory holding all tracking frames (Get Frames)*)
